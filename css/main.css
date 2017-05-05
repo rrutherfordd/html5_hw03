@@ -1,0 +1,41 @@
+h1 {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: large;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: small;
+  font-weight: bold;
+}
+
+th {
+  font-weight: bold;
+}
+
+table {
+  margin-left: 12px;
+  border: 1px solid black;
+}
+
+/* http://stackoverflow.com/questions/1257430/css-border-only-inside-the-table */
+
+table { border-collapse: collapse; }
+
+td + td,
+th + th { border-left: 1px solid; }
+tr + tr { border-top: 1px solid; }
+
+
+tr + tr > td,
+tr + tr > th { border-top: 1px solid; }
+
+/* http://stackoverflow.com/questions/1257430/css-border-only-inside-the-table */
+
+input, textarea, select {
+  margin-left: 12px;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Assignment 3">
+
+  <title>Inputs</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<!--
+  **  Make a table for different kinds of input elements. (This includes not just input elements per se, but also textarea and select.) In the first column, show type of input (e.g. input type="checkbox"). In the second column, put an actual element of that type. The third column is for the values entered by the user.
+  **  Your JavaScript should read and display the initial value for each input, and then handle the change event for the inputs by displaying the new value. For most inputs, you can use jQuery's val()method. An exception is checkboxes, for which you can use jQuery's prop() method.
+  **  Include most of the input types HTML5 offers, including select with the multiple attribute. (Certain input types, such as buttons, don't really have values, so don't bother with those.) Try using HTML5's datalist element with input, too.
+-->
+<body>
+  <h1>Inputs</h1>
+  <form id="acceptInput">
+    <!-- inputs -->
+    <br/>
+    <input type="button" id="buttonInput" value="Button">
+    <br/>
+    <br/>    
+    <input type="checkbox" id="checkboxInput">
+    <br/>
+    <br/>    
+    <input type="color" id="colorInput">
+    <br/>
+    <br/>    
+    <input type="date">
+    <br/>
+    <br/>    
+    <input type="datetime">
+    <br/>
+    <br/>    
+    <input type="datetime-local">
+    <br/>
+    <br/>    
+    <input type="email">
+    <br/>
+    <br/>    
+    <input type="file">
+    <br/>
+    <br/>    
+    <input type="hidden">
+    <br/>
+    <br/>    
+    <input type="image">
+    <br/>
+    <br/>    
+    <input type="month">
+    <br/>
+    <br/>    
+    <input type="number">
+    <br/>
+    <br/>    
+    <input type="password">
+    <br/>
+    <br/>    
+    <input type="radio">
+    <br/>
+    <br/>    
+    <input type="range">
+    <br/>
+    <br/>    
+    <input type="reset">
+    <br/>
+    <br/>    
+    <input type="search">
+    <br/>
+    <br/>    
+    <input type="submit">
+    <br/>
+    <br/>    
+    <input type="tel">
+    <br/>
+    <br/>    
+    <input type="text">
+    <br/>
+    <br/>    
+    <input type="time">
+    <br/>
+    <br/>    
+    <input type="url">
+    <br/>
+    <br/>    
+    <input type="week">
+    <br/>
+    <br/>    
+    <!-- textarea -->
+    <textarea id="textareaInput"></textarea>
+    <br/>
+    <br/>    
+    <!-- select -->
+    <select id="selectInput">
+      <option value="value1">Value 1</option>
+      <option value="value2">Value 2</option>
+      <option value="value3">Value 3</option>
+    </select>
+    <br/>
+  </form>
+  <br/>
+  <br/>
+  <h1>Input Values</h1>
+  <br/>  
+  <table>
+    <tr>
+      <th>Control type</th>
+      <th>Control</th>
+      <th>Value entered</th>
+    </tr>
+    <tr id="buttonInputRow">
+      <td>input type="button"</td>
+      <td><input type="button"></td>
+      <td></td>
+    </tr>
+    <tr id="checkboxInputRow">
+      <td>input type="checkbox"</td>
+      <td><input type="checkbox"></td>
+      <td></td>
+    </tr>
+    <tr id="colorInputRow">
+      <td>input type="color"</td>
+      <td><input type="color"></td>
+      <td></td>
+    </tr>
+<!-- TODO add other input types -->    
+    <tr id="textareaInputRow">
+      <td>textarea</td>
+      <td><textarea></textarea></td>
+      <td></td>
+    </tr>
+    <tr id="selectInputRow">
+      <td>select</td>
+      <td><select></select></td>
+      <td></td>
+    </tr>
+    <tr id="tableEnd"><td>|||</td><td>|||</td><td>|||</td></tr>
+  </table>
+  <!-- Optional
+  -->
+  <!-- JavaScript -->
+  <!-- jQuery at http://code.jquery.com/ -->
+  <script
+    src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
